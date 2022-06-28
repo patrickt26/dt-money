@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { createServer } from 'miragejs';
 import { App } from './App';
+import Modal from 'react-modal';
 
 createServer({
   routes() {
@@ -33,6 +34,8 @@ createServer({
 //     <App />
 //   </React.StrictMode>
 // );
+
+Modal.setAppElement('#root');
 
 ReactDOM.render(
   <React.StrictMode>
